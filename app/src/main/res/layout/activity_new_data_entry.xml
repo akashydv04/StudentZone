@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewDataEntry">
+
+    <EditText
+        android:id="@+id/client_mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_style"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Client Mobile Number"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/validate_number_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validate Mobile Number"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/client_mobile_number"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/form_panel"
+        android:layout_below="@id/validate_number_btn"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/property_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textAlignment="center"
+            android:hint="Property / PG Name"
+            android:background="@drawable/edit_text_style"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/property_city_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="City"
+            android:background="@drawable/edit_text_style"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/property_locality_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Area / Locality"
+            android:background="@drawable/edit_text_style"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/owner_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Owner Name (Optional)"
+            android:background="@drawable/edit_text_style"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/preferred_language_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Preferred Language (Optional)"
+            android:background="@drawable/edit_text_style"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

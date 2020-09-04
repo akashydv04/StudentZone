@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.astudentzone.akash.MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/amarante"
+        android:text="Login Using Mobile Number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Please Enter Mobile Number"/>
+
+    <Button
+        android:id="@+id/get_otp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2FCC35"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:text="Get OTP"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/edt_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/get_otp"
+        android:padding="10dp"
+        android:inputType="text"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="Enter OTP here"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/edt_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
